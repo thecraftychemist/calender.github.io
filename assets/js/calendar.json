@@ -1,8 +1,7 @@
-    //lego calendar array
-    var calendarData = {
-    	"blue" : "girls Not Brides",
-    	"red" : "open gov",
-    	"yellow" : "example 2",
-    	"gray" : "example 3",
-    	"green" : "example 4"
-    };
+{
+	"blue":"girls Not Brides",
+    	"red":"open gov",
+    	"yellow":"example 2",
+    	"gray":"example 3",
+    	"green":"example 4"
+}
