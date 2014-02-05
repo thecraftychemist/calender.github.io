@@ -1,0 +1,225 @@
+// ============================
+//	Components Partial File for:
+//	Author: Shane Griffiths
+//	Project Contributors:
+//
+//	* Intructions
+//	---------------------------
+//	1. Use this file for any specific conponents.
+//	2. They could be global (i.e. widgets) or page specific (i.e. about page infographic). Try and keep page specific at the bottom of the file.
+//	3. Items such as header, sidebar, footer etc belong in the _layout.scss section as it's core structure and site wide.
+//
+//============================ */
+
+ /* ==========================================
+	Page Specific Components
+	(anything that can be abstracted out should be in it's own partial)
+============================================*/
+
+
+//LAYOUT styling
+.calendar-heading{
+	margin: 1.25em 0em;
+	color: $white-bg;
+}
+
+.color-list{
+	position: relative;
+	display: block;
+	margin-bottom: 1.25em;
+	.column{
+		float: left;
+		width: 45%;
+		text-align: center;
+		&:first-child{
+			margin-right: 10%;
+		}
+		h2{
+			text-decoration: underline;
+			color: $white-bg;
+		}
+	}
+}
+
+//outputted rows styling
+.calendar-row{
+	width: 100%;
+	margin-bottom: 1.25em;
+	@include border(bottom, $color: $white-bg);
+	.container{
+		width: 45%;
+		float: left;
+		text-align: center;
+		margin: 0 auto;
+		vertical-align: middle;
+		&:first-child{
+			margin-right:  10%;
+		}
+	}
+}
+
+//2d Lego Block Styling
+/*
+.lego-block {
+display: inline-block;
+  font-size: 16px;
+  width: 8em;
+  height: 8em;
+  clear: both;
+  margin: 0 auto 1.25em;
+}
+
+
+.lego-block__stud {
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
+  height: 31.25%;
+  width: 31.25%;
+  margin: 9.375%;
+  float: left;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, .05) url(http://cl.ly/image/3V0I2a1g060P/Slice%201.png) 50% 50% no-repeat;
+  background-size: 90%;
+}
+*/
+
+//project name styling
+.project-title{
+	display: inline-block;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	color: $white-bg;
+	margin-top: 4em;
+}
+
+footer p {
+	color: $white-bg;
+}
+
+//3d blocks
+.brickContainer {
+	display: inline-block;
+	position: relative;
+	width: 12em;
+	height: 12em;
+	margin: 0 auto 1.25em;
+}
+
+/* Brick sides */
+
+.brickTop {
+	position: absolute;
+	left: 48px;
+	top: 45px;
+	width: 6em;
+	height: 3.95em;
+	transform: rotate(20deg) skew(-50deg);
+	-webkit-transform: rotate(20deg) skew(-50deg);
+	-moz-transform: rotate(20deg) skew(-50deg);
+	-o-transform: rotate(20deg) skew(-50deg);
+	-ms-transform: rotate(20deg) skew(-50deg);
+	}
+
+.brickRight {
+	position: absolute;
+	left: 93px;
+	top: 97px;
+	width: 6em;
+	height: 3em;
+	transform: rotate(-20deg) skew(-20deg);
+	-webkit-transform: rotate(-20deg) skew(-20deg);
+	-moz-transform: rotate(-20deg) skew(-20deg);
+	-o-transform: rotate(-20deg) skew(-20deg);
+	-ms-transform: rotate(-20deg) skew(-20deg);
+
+}
+
+.brickLeft {
+	position: absolute;
+	left: 1px;
+	top: 97px;
+	width: 6em;
+	height: 3em;
+	transform: rotate(20deg) skew(20deg);
+	-webkit-transform: rotate(20deg) skew(20deg);
+	-moz-transform: rotate(20deg) skew(20deg);
+	-o-transform: rotate(20deg) skew(20deg);
+	-ms-transform: rotate(20deg) skew(20deg);
+}
+
+/* All dots */
+
+ul {
+	position: absolute;
+	left: 70px;
+	top: 20px;
+	li {
+		position: absolute;
+		list-style: none;
+		border-top-left-radius: 40px 15px;
+		border-top-right-radius: 40px 15px;
+		border-bottom-left-radius: 40px 15px;
+		border-bottom-right-radius: 40px 15px;
+	}
+}
+
+.topLeft {
+	left: -41px;
+	top: 28px;
+	width: 2.5em;
+	height: 2em;
+}
+
+.topRight {
+	left: 5px;
+	top: 10px;
+	width: 2.5em;
+	height: 2em;
+}
+
+.bottomLeft {
+	left: 6px;
+	top: 43px;
+	width:2.5em;
+	height: 2em;
+}
+
+.bottomRight {
+	left: 50px;
+	top: 27px;
+	width: 2.5em;
+	height: 2em;
+}
+
+/* Tall dots */
+
+.dotsTall li {
+	background-color: darken(blue, 15%);
+}
+
+/* Dot tops */
+
+.dots li {
+	height: 1em;
+}
+
+//lego block colours
+.green{
+	background-color: green;
+}
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
+}
+.yellow{
+	background-color: yellow;
+}
+.grey{
+	background-color: grey;
+}
+.black{
+	background-color: black;
+}

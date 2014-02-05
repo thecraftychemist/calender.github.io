@@ -1,0 +1,19 @@
+ //*******
+// MOBILE
+
+$max_columns: 2;
+
+.m-hide { display: none; }
+
+@for $i from 1 through $max_columns - 1 {
+
+	.m-#{$i} {
+		@include span($i, $gutter_pc, $max_columns);
+	}
+
+}
+
+.m-all {
+	@include span_first;
+	width:100%;
+}

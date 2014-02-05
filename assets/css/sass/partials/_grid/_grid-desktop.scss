@@ -1,0 +1,19 @@
+ //********
+// DESKTOP
+
+$max_columns: 6;
+
+.d-hide { display: none; }
+
+@for $i from 1 through $max_columns - 1 {
+
+	.d-#{$i} {
+		@include span($i, $gutter_pc, $max_columns);
+	}
+
+}
+
+.d-all {
+	@include span_first;
+	width:100%;
+}

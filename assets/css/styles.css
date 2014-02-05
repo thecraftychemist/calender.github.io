@@ -1,0 +1,535 @@
+/* ==========================================
+	Type Based Settings
+============================================*/
+/* ==========================================
+	Color Settings
+============================================*/
+/* ==========================================
+	Variables
+============================================*/
+/* ==========================================
+    Type and List Based Mixins
+============================================*/
+/* ==========================================
+    Style Mixins
+============================================*/
+/* ==========================================
+    Color Based Mixins
+============================================*/
+/* ==========================================
+    Baseline focused Mixins
+============================================*/
+/**
+ * Use this with type based elements. Whatever the target font-size is, parse that size  (in px) through this mixin.
+ * The mixin will output the correct margin-bottom and line-height based on the agreed baseline
+ */
+/* ==========================================
+    Media Queries
+============================================*/
+/**
+ * Popular breakpoints (taken from the grid)
+ */
+/**
+ * Example of use
+ *
+
+    P{
+        font-size: 12px;
+        @include mq($tablet){
+            font-size 20px;
+        }
+    }
+
+ *
+ */
+/**
+ * As per: stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+.media {
+  display: block; }
+
+.img {
+  float: left; }
+
+/* Reversed image location (right instead of left). */
+.img-rev {
+  float: right; }
+
+.img img {
+  display: block; }
+
+.body {
+  overflow: hidden; }
+
+.body > :last-child {
+  margin-bottom: 0; }
+
+/**
+ * Simple floats
+ */
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+/**
+ * Basic Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+/**
+ * Big up @necolas: nicolasgallagher.com/micro-clearfix-hack
+ */
+.media:before,
+.media:after,
+.cf:before,
+.row:before,
+.cf:after,
+.row:after {
+  content: "";
+  display: table; }
+
+.media:after,
+.cf:after,
+.row:after {
+  clear: both; }
+
+.media,
+.cf,
+.row {
+  zoom: 1; }
+
+.top-border {
+  border-top: 1px solid grey; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/**
+ * Server info - banner that displays while editing local site
+ */
+.server-info {
+  position: fixed;
+  font-size: 14px;
+  color: #333;
+  font-weight: 100;
+  background-color: pink;
+  padding: 4px;
+  z-index: 5;
+  top: 28px;
+  left: 0; }
+
+.center {
+  text-align: center; }
+
+/* ==========================================
+    Useful
+============================================*/
+::-moz-selection {
+  background: black;
+  text-shadow: none;
+  color: white; }
+
+::selection {
+  background: black;
+  text-shadow: none;
+  color: white; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0; }
+
+html {
+  font-size: 16px;
+  overflow-y: scroll; }
+
+body {
+  background-color: #272727; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================
+    Type
+============================================*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+/* ==========================================
+    Large Heading Styles
+============================================*/
+/* ==========================================
+    Headings Detail
+============================================*/
+/* ==========================================
+    Micro Copy
+============================================*/
+/* ==========================================
+    Links
+============================================*/
+a {
+  text-decoration: underline;
+  -webkit-transition: all 0.1s linear;
+  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.1s linear;
+  /* Firefox 4-15 */
+  -o-transition: all 0.1s linear;
+  /* Opera 10.50 - 12.00 */
+  transition: all 0.1s linear;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  outline: none;
+  border: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    border: none; }
+
+.no-underline {
+  text-decoration: none; }
+
+/* ==========================================
+    Paragraphs
+============================================*/
+strong {
+  font-weight: 600; }
+
+/* ==========================================
+    Tables
+============================================*/
+/* ==========================================
+    Lists
+============================================*/
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+/* ==========================================
+    Images
+============================================*/
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  width: auto; }
+
+/* ==========================================
+    Grid
+============================================*/
+.row {
+  margin-left: -20px; }
+
+.col {
+  border: 0px solid transparent;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  border-left-width: 20px;
+  margin-left: 0;
+  padding: 0 0px; }
+
+.m-hide {
+  display: none; }
+
+.m-1 {
+  display: block;
+  width: 50%; }
+
+.m-all {
+  margin-left: 0;
+  width: 100%; }
+
+@media screen and (min-width: 700px) {
+  .t-hide {
+    display: none; }
+
+  .t-1 {
+    display: block;
+    width: 33.33333%; }
+
+  .t-2 {
+    display: block;
+    width: 66.66667%; }
+
+  .t-all {
+    margin-left: 0;
+    width: 100%; } }
+@media screen and (min-width: 990px) {
+  .d-hide {
+    display: none; }
+
+  .d-1 {
+    display: block;
+    width: 16.66667%; }
+
+  .d-2 {
+    display: block;
+    width: 33.33333%; }
+
+  .d-3 {
+    display: block;
+    width: 50%; }
+
+  .d-4 {
+    display: block;
+    width: 66.66667%; }
+
+  .d-5 {
+    display: block;
+    width: 83.33333%; }
+
+  .d-all {
+    margin-left: 0;
+    width: 100%; } }
+/* ==========================================
+	GLOBAL LAYOUTS
+============================================*/
+.wrapper {
+  max-width: 61.875em;
+  margin: 0 auto;
+  padding: 0 .625em; }
+  .wrapper.relative {
+    position: relative; }
+
+/* ==========================================
+	HEADER
+============================================*/
+/* ==========================================
+	GRIDS
+============================================*/
+/* ==========================================
+	FOOTER
+============================================*/
+ /* ==========================================
+	Page Specific Components
+	(anything that can be abstracted out should be in it's own partial)
+============================================*/
+.calendar-heading {
+  margin: 1.25em 0em;
+  color: #e4e4e4; }
+
+.color-list {
+  position: relative;
+  display: block;
+  margin-bottom: 1.25em; }
+  .color-list .column {
+    float: left;
+    width: 45%;
+    text-align: center; }
+    .color-list .column:first-child {
+      margin-right: 10%; }
+    .color-list .column h2 {
+      text-decoration: underline;
+      color: #e4e4e4; }
+
+.calendar-row {
+  width: 100%;
+  margin-bottom: 1.25em;
+  border-bottom: 1px solid #e4e4e4; }
+  .calendar-row .container {
+    width: 45%;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle; }
+    .calendar-row .container:first-child {
+      margin-right: 10%; }
+
+/*
+.lego-block {
+display: inline-block;
+  font-size: 16px;
+  width: 8em;
+  height: 8em;
+  clear: both;
+  margin: 0 auto 1.25em;
+}
+
+
+.lego-block__stud {
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
+  height: 31.25%;
+  width: 31.25%;
+  margin: 9.375%;
+  float: left;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, .05) url(http://cl.ly/image/3V0I2a1g060P/Slice%201.png) 50% 50% no-repeat;
+  background-size: 90%;
+}
+*/
+.project-title {
+  display: inline-block;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #e4e4e4;
+  margin-top: 4em; }
+
+footer p {
+  color: #e4e4e4; }
+
+.brickContainer {
+  display: inline-block;
+  position: relative;
+  width: 12em;
+  height: 12em;
+  margin: 0 auto 1.25em; }
+
+/* Brick sides */
+.brickTop {
+  position: absolute;
+  left: 48px;
+  top: 45px;
+  width: 6em;
+  height: 3.95em;
+  transform: rotate(20deg) skew(-50deg);
+  -webkit-transform: rotate(20deg) skew(-50deg);
+  -moz-transform: rotate(20deg) skew(-50deg);
+  -o-transform: rotate(20deg) skew(-50deg);
+  -ms-transform: rotate(20deg) skew(-50deg); }
+
+.brickRight {
+  position: absolute;
+  left: 93px;
+  top: 97px;
+  width: 6em;
+  height: 3em;
+  transform: rotate(-20deg) skew(-20deg);
+  -webkit-transform: rotate(-20deg) skew(-20deg);
+  -moz-transform: rotate(-20deg) skew(-20deg);
+  -o-transform: rotate(-20deg) skew(-20deg);
+  -ms-transform: rotate(-20deg) skew(-20deg); }
+
+.brickLeft {
+  position: absolute;
+  left: 1px;
+  top: 97px;
+  width: 6em;
+  height: 3em;
+  transform: rotate(20deg) skew(20deg);
+  -webkit-transform: rotate(20deg) skew(20deg);
+  -moz-transform: rotate(20deg) skew(20deg);
+  -o-transform: rotate(20deg) skew(20deg);
+  -ms-transform: rotate(20deg) skew(20deg); }
+
+/* All dots */
+ul {
+  position: absolute;
+  left: 70px;
+  top: 20px; }
+  ul li {
+    position: absolute;
+    list-style: none;
+    border-top-left-radius: 40px 15px;
+    border-top-right-radius: 40px 15px;
+    border-bottom-left-radius: 40px 15px;
+    border-bottom-right-radius: 40px 15px; }
+
+.topLeft {
+  left: -41px;
+  top: 28px;
+  width: 2.5em;
+  height: 2em; }
+
+.topRight {
+  left: 5px;
+  top: 10px;
+  width: 2.5em;
+  height: 2em; }
+
+.bottomLeft {
+  left: 6px;
+  top: 43px;
+  width: 2.5em;
+  height: 2em; }
+
+.bottomRight {
+  left: 50px;
+  top: 27px;
+  width: 2.5em;
+  height: 2em; }
+
+/* Tall dots */
+.dotsTall li {
+  background-color: #0000b3; }
+
+/* Dot tops */
+.dots li {
+  height: 1em; }
+
+.green {
+  background-color: green; }
+
+.red {
+  background-color: red; }
+
+.blue {
+  background-color: blue; }
+
+.yellow {
+  background-color: yellow; }
+
+.grey {
+  background-color: grey; }
+
+.black {
+  background-color: black; }

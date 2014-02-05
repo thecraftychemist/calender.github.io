@@ -1,0 +1,180 @@
+// ============================
+//  Elements Sass File for:
+//  Author: Shane Griffiths
+//  Project Contributors:
+//
+//  * Intructions
+//  ---------------------------
+//  2. This is where HTML base elements are styled. Do not use classes or IDs in here (instead use _components.scss).
+//  3. Use this file for everything else; such as: imgs, quotes, lists, links, sections, articles etc
+//
+//============================ */
+
+
+/* ==========================================
+    Useful
+============================================*/
+::-moz-selection {
+    background: black;
+    text-shadow: none;
+    color: white;
+}
+::selection {
+    background: black;
+    text-shadow: none;
+    color: white;
+}
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: black;
+    padding: 0.2em 0;
+}
+html {
+    font-size: 16px; //This is the base font setting.
+    overflow-y:scroll;
+}
+body{
+    background-color: $black-bg;
+}
+.browsehappy{
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================
+    Type
+============================================*/
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    padding-top: 0;
+    //@include heading-font;
+}
+
+
+/* ==========================================
+    Large Heading Styles
+============================================*/
+.giga {
+    //@include the-font(semibold, normal);
+    //@include font-size(45);
+    //@include baseline-mb(45, half);
+    //@include baseline-lh(45);
+}
+.mega {
+
+}
+.kilo {
+
+}
+
+
+/* ==========================================
+    Headings Detail
+============================================*/
+h1, .alpha {
+
+}
+h2, .beta {
+
+}
+h3, .gamma {
+
+}
+h4, .delta {
+
+}
+h5, .epsilon {
+
+}
+h6, .zeta {
+
+}
+
+/* ==========================================
+    Micro Copy
+============================================*/
+small, .small {
+
+}
+.micro {
+
+}
+.milli {
+
+}
+
+/* ==========================================
+    Links
+============================================*/
+a{
+    text-decoration: underline;
+    -webkit-transition: all 0.1s linear;    /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: all 0.1s linear;       /* Firefox 4-15 */
+    -o-transition: all 0.1s linear;         /* Opera 10.50 - 12.00 */
+    transition: all 0.1s linear;            /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+    outline: none;
+    border: none;
+    //color: $type-color;
+    &:hover,
+    &:focus,
+    &:active{
+        text-decoration:none;
+        outline: none;
+        border:none;
+    }
+ }
+ .no-underline{
+    text-decoration:none;
+ }
+
+
+/* ==========================================
+    Paragraphs
+============================================*/
+p {
+    //@include the-font(regular, normal);
+    //@include font-size($basefont);
+    //@include baseline-mb(16);
+    //@include baseline-lh(16);
+}
+strong{
+    font-weight: 600;
+}
+
+/* ==========================================
+    Tables
+============================================*/
+
+
+/* ==========================================
+    Lists
+============================================*/
+ul, ol{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* ==========================================
+    Images
+============================================*/
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+}
+
+

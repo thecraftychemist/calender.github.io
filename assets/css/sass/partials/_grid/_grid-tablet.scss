@@ -1,0 +1,19 @@
+ //*******
+// TABLET
+
+$max_columns: 3;
+
+.t-hide { display: none; }
+
+@for $i from 1 through $max_columns - 1 {
+
+	.t-#{$i} {
+		@include span($i, $gutter_pc, $max_columns);
+	}
+
+}
+
+.t-all {
+	@include span_first;
+	width:100%;
+}

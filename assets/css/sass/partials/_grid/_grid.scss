@@ -1,0 +1,11 @@
+@import "_grid-setup.scss";
+
+@import "_grid-mobile.scss";
+
+@media screen and (min-width: 700px) {
+	@import "_grid-tablet.scss";
+}
+
+@media screen and (min-width: 990px) {
+	@import "_grid-desktop.scss";
+}
