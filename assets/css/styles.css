@@ -188,7 +188,7 @@ html {
   overflow-y: scroll; }
 
 body {
-  background-color: #272727; }
+  background-color: #bcbcbc; }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -364,7 +364,7 @@ img {
 ============================================*/
 .calendar-heading {
   margin: 1.25em 0em;
-  color: #e4e4e4; }
+  color: #3d3d3d; }
 
 .color-list {
   position: relative;
@@ -376,14 +376,10 @@ img {
     text-align: center; }
     .color-list .column:first-child {
       margin-right: 10%; }
-    .color-list .column h2 {
-      text-decoration: underline;
-      color: #e4e4e4; }
 
 .calendar-row {
   width: 100%;
-  margin-bottom: 1.25em;
-  border-bottom: 1px solid #e4e4e4; }
+  margin-bottom: 1.25em; }
   .calendar-row .container {
     width: 45%;
     float: left;
@@ -421,11 +417,11 @@ display: inline-block;
   display: inline-block;
   font-size: 1.25em;
   text-transform: uppercase;
-  color: #e4e4e4;
+  color: #3d3d3d;
   margin-top: 4em; }
 
 footer p {
-  color: #e4e4e4; }
+  color: #3d3d3d; }
 
 .brickContainer {
   display: inline-block;
@@ -509,8 +505,23 @@ ul {
   height: 2em; }
 
 /* Tall dots */
-.dotsTall li {
+.dotsTall li.blue {
   background-color: #0000b3; }
+
+.dotsTall li.red {
+  background-color: #b30000; }
+
+.dotsTall li.black {
+  background-color: black; }
+
+.dotsTall li.yellow {
+  background-color: #b2b300; }
+
+.dotsTall li.gray {
+  background-color: #5a5a5a; }
+
+.dotsTall li.green {
+  background-color: #003400; }
 
 /* Dot tops */
 .dots li {
@@ -528,8 +539,8 @@ ul {
 .yellow {
   background-color: yellow; }
 
-.grey {
-  background-color: grey; }
+.gray {
+  background-color: gray; }
 
 .black {
   background-color: black; }

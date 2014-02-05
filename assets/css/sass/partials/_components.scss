@@ -20,7 +20,7 @@
 //LAYOUT styling
 .calendar-heading{
 	margin: 1.25em 0em;
-	color: $white-bg;
+	color: $gray-copy;
 }
 
 .color-list{
@@ -34,10 +34,6 @@
 		&:first-child{
 			margin-right: 10%;
 		}
-		h2{
-			text-decoration: underline;
-			color: $white-bg;
-		}
 	}
 }
 
@@ -45,7 +41,7 @@
 .calendar-row{
 	width: 100%;
 	margin-bottom: 1.25em;
-	@include border(bottom, $color: $white-bg);
+	//@include border(bottom, $color: $white-bg);
 	.container{
 		width: 45%;
 		float: left;
@@ -89,12 +85,12 @@ display: inline-block;
 	display: inline-block;
 	font-size: 1.25em;
 	text-transform: uppercase;
-	color: $white-bg;
+	color: $gray-copy;
 	margin-top: 4em;
 }
 
 footer p {
-	color: $white-bg;
+	color: $gray-copy;
 }
 
 //3d blocks
@@ -194,8 +190,24 @@ ul {
 
 /* Tall dots */
 
-.dotsTall li {
+.dotsTall li.blue {
 	background-color: darken(blue, 15%);
+}
+.dotsTall li.red {
+	background-color: darken(red, 15%);
+}
+
+.dotsTall li.black {
+	background-color: darken(black, 15%);
+}
+.dotsTall li.yellow {
+	background-color: darken(yellow, 15%);
+}
+.dotsTall li.gray {
+	background-color: darken(gray, 15%);
+}
+.dotsTall li.green {
+	background-color: darken(green, 15%);
 }
 
 /* Dot tops */
@@ -217,8 +229,8 @@ ul {
 .yellow{
 	background-color: yellow;
 }
-.grey{
-	background-color: grey;
+.gray{
+	background-color: gray;
 }
 .black{
 	background-color: black;
